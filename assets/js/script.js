@@ -1,19 +1,19 @@
 $(document).ready(function(){
 
 $("#home").click(function(){
-		window.location = "../home page/index.html";
+		window.location = "index.html";
 
 	});
 
 
 	$("#about_me").click(function(){
-		window.location = "../about me page/index.html";
+		window.location = "about me page/index.html";
 
 	});
 
 
 	$("#portfolio").click(function(){
-		window.location = "../portfolio/index.html";
+		window.location = "portfolio/index.html";
 
 	});
 
@@ -24,7 +24,7 @@ $("#home").click(function(){
 	});
 
 	$("#travel").click(function(){
-		window.location = "../travel/index.html";
+		window.location = "travel/index.html";
 
 	});
 
@@ -35,6 +35,6 @@ $("#home").click(function(){
 	});
 
 	$("#contact").click(function(){
-		window.location ="../contact/index.html";
+		window.location ="contact/index.html";
 	});
 });

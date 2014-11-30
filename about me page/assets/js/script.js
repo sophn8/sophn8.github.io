@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 $("#home").click(function(){
-		window.location = "../home page/index.html";
+		window.location = "../index.html";
 
 	});
 
