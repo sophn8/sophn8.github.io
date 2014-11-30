@@ -1,0 +1,108 @@
+body {
+	font-family: "Josefin Sans";
+	margin: 0px auto;
+	text-align: center;
+}
+
+#topbar {
+    background-color: #CCFFCC;
+    color: black;
+    width:100%;
+    height:45px;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+}
+
+.topbar-item {
+    display: inline-block;
+    float: right;
+    margin-right: 48px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+#container {
+	width: 960px;
+	margin: 0px;
+	padding: 30px 0px;
+	margin-left: auto;
+	margin-right: auto;
+    
+}
+
+#thumbnail {
+	margin-top: 40px;
+}
+
+
+#thumbnail img {
+	width: 200px;
+	margin: 0px auto;
+	
+}
+
+#header {
+	padding: 30px;
+	margin: 20px;
+}
+
+#heading {
+	padding-top: 10px;
+  	font-size: 24px;
+  	margin-top: 20px;
+  	font-weight: 300;
+  	
+}
+
+#subheading {
+	padding: 10px 10px 30px 10px;
+  	font-size: 36x;
+  	font-weight: 00;
+  	font-style: italic;  
+  	color: black;
+    
+}
+
+#description {
+	width: 450px;
+    margin: 0px auto;
+	font-size: 14;
+    line-height: 24px;
+    padding-bottom: 24px;
+
+}
+
+#list-container {
+	padding-bottom: 20px;
+	background-color: #CCFFCC;
+	margin: 0px auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+    width: 400px;}
+
+#list-title {
+	padding: 10px;
+	font-size:24px;
+	font-weight:200;
+	font-style: normal;
+	color: black;}
+}
+
+
+#list-content {
+	font-size:12px;
+	font-weight:100;
+	color: black;
+}
+
+.list-item {
+	padding:10px;
+	width: 280px;
+	margin: 0px auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: white;
+	font-weight:500;
+	color: rgb(134, 73, 111);
+}
