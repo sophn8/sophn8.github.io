@@ -1,112 +1,39 @@
-$(document).ready(function(){
+$(document).ready(function() {
+
+  // QUESTION 6
+
+  //Implement the showing and hiding of the sidebar when the user clicks on .sidebar-button here:
 
 
+  // QUESTION 8
 
-$("#home").click(function(){
-		window.location = "../index.html";
+  //Implement the "slide to left" when the user clicks on #carousel-next here
 
-	});
+  //Implement the "slide to right" when the user clicks on #carousel-prev here
 
-
-	$("#about_me").click(function(){
-		window.location = "../about me page/index.html";
-
-	});
-
-
-	$("#portfolio").click(function(){
-		window.location = "../portfolio/index.html";
-
-	});
-
-
-	$("#resume").click(function(){
-		window.location = "assets/img/Resume_Sophia Ng.pdf";
-
-	});
-
-	$("#travel").click(function(){
-		window.location = "../travel/index.html";
-
-	});
-
-
-	$("#blog").click(function(){
-		window.location = "http://www.sophn8.blogspot.com";
-
-	});
-
-	$("#contact").click(function(){
-		window.location ="../contact/index.html";
-	});
-
-
-	$("#AoNang1").click(function(){
-		if ($("#AoNang1Cap").is(":visible")){
-			$("#AoNang1Cap").hide();
-			("#AoNang1Cap").text("");
+	$("#carousel-prev").click(function(){
+		var cur = parseInt($('#carousel').css('margin-left').replace("px", ""));
+		if (cur == -3840){
+			return false;
 		}
 		else{
-			$("#AoNang1Cap").show();
-			$("#AoNang1Cap").text("Highlights: went on a Four Island Tour, snorkeled, and cliff jumped");
+			$('#carousel').css('margin-left',cur - 960);
 		}
 	});
-
-	$("#KohSamet1").click(function(){
-		if ($("#KohSamet1Cap").is(":visible")){
-			$("#KohSamet1Cap").hide();
-			("#KohSamet1Cap").text("");
+	
+	$("#carousel-next").click(function(){
+		var cur = parseInt($('#carousel').css('margin-left').replace("px", ""));
+		if (cur == 0){
+			return false;
 		}
 		else{
-			$("#KohSamet1Cap").show();
-			$("#KohSamet1Cap").text("Highlights: survived a scary 5-hour bus ride during rainy season, made the last ferry to the island, hitched rides from strangers");
+			$('#carousel').css('margin-left',cur + 960);
 		}
 	});
 
-	$("#Railay1").click(function(){
-		if ($("#Railay1Cap").is(":visible")){
-			$("#Railay1Cap").hide();
-			("#Railay1Cap").text("");
-		}
-		else{
-			$("#Railay1Cap").show();
-			$("#Railay1Cap").text("Highlights: swam in the clearest waters with an ex-member of Red Jumpsuit Apparatus and went to a Princess Cave full of phallic symbols");
-		}
-	});
+  //THIS IS NOT A REQUIRED QUESTION 
+  // EXTRA FOR EXPERTS 
 
-	$("#SiemReap1").click(function(){
-		if ($("#SiemReap1Cap").is(":visible")){
-			$("#SiemReap1Cap").hide();
-			("#SiemReap1Cap").text("");
-		}
-		else{
-			$("#SiemReap1Cap").show();
-			$("#SiemReap1Cap").text("Highlights: ate happy pizza, grilled pork blood, and brownies from our hostel");
-		}
-	});
-
-	$("#SiemReap2").click(function(){
-		if ($("#SiemReap2Cap").is(":visible")){
-			$("#SiemReap2Cap").hide();
-			("#SiemReap2Cap").text("");
-		}
-		else{
-			$("#SiemReap2Cap").show();
-			$("#SiemReap2Cap").text("Highlights: Minh finally took us to an authentic market with yummy foods instead of a touristy Western-oriented restaurant");
-		}
-	});
-
-	$("#SiemReap3").click(function(){
-		if ($("#SiemReap3Cap").is(":visible")){
-			$("#SiemReap3Cap").hide();
-			("#SiemReap3Cap").text("");
-		}
-		else{
-			$("#SiemReap3Cap").show();
-			$("#SiemReap3Cap").text("Highlight: bonding by way of Cambodian cheese");
-		}
-	});
-
-
+  // Implement a "smooth scroll" when the user clicks on the sidebar links here
 
 });
