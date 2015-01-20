@@ -19,7 +19,7 @@ $("#home").click(function(){
 
 
 	$("#resume").click(function(){
-		window.location = "http://www.linkedin.com/in/sophiang0808";
+		window.location = "";
 
 	});
 
