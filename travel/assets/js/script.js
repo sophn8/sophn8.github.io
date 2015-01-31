@@ -9,7 +9,7 @@ $("#home").click(function(){
 
 
 	$("#about_me").click(function(){
-		window.location = "../about me page/index.html";
+		window.location = "../aboutme/index.html";
 
 	});
 
