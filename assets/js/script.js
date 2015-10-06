@@ -1,19 +1,19 @@
 $(document).ready(function(){
 
 $("#home").click(function(){
-		window.location = "index.html";
+		window.location = "../index.html";
 
 	});
 
 
 	$("#about_me").click(function(){
-		window.location = "aboutme/index.html";
+		window.location = "../aboutme/index.html";
 
 	});
 
 
 	$("#portfolio").click(function(){
-		window.location = "portfolio/index.html";
+		window.location = "../portfolio/index.html";
 
 	});
 
@@ -24,7 +24,7 @@ $("#home").click(function(){
 	});
 
 	$("#travel").click(function(){
-		window.location = "travel/index.html";
+		window.location = "../travel/index.html";
 
 	});
 
@@ -35,6 +35,14 @@ $("#home").click(function(){
 	});
 
 	$("#contact").click(function(){
-		window.location ="contact/index.html";
+		window.location ="../contact/index.html";
+	});
+
+	$(".list-item").hover(
+	function(){
+		$(".list-item").css("background-color","#f2f2f2");
+	},
+	function(){
+		$(".list-item").css("background-color","white");
 	});
 });
